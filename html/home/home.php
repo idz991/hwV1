@@ -21,6 +21,8 @@ echo "Hallo User: ".$name;
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href= "home.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
+  <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "map.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -85,10 +87,13 @@ echo "Hallo User: ".$name;
       <!-- CONTENT-WRAPPER-->
       <div class="outer-content  w3-round-xlarge">
          <div class="map-content">
-              <button class="w3-btn w3-round-xxlarge w3-black w3-hover-white"> Show MAP </button>
+              <button class="w3-btn w3-round-xxlarge w3-black w3-hover-white" onclick="getMapData"> Show MAP </button>
               <button class="w3-btn w3-round-xxlarge w3-black w3-hover-white"> Hide MAP </button>
                  <div class="map">
-
+                   <script language="JavaScript">
+                                           $(document).ready(getMapData());
+                                   </script>
+                           </div>
                  </div>
          </div>
       </div>
